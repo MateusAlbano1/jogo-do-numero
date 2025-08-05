@@ -13,8 +13,16 @@
     Veja se você consegue adivinhar em 10 tentativas ou menos.
     Nós diremos se seu plapite foi muito alto ou muito baixo.</p>
 
-<div class="formulario"></div>
-<div class="paragrafosResultados"></div>
+<div class="formulario">
+    <label for="campoPalpite">Digite um plapite: </label>
+    <input type="number" min="1" max="100" required id="campoPalpite" class="campoPalpite">
+    <input type="submit" value="Enviar palpite" class="envioPalpite">
+</div>
+<div class="paragrafosResultados">
+    <p class="palpite"></p>
+    <p class="ultimoResultado"></p>
+    <p class="baixoOuAlto"></p>
+</div>
 
  <script src="main.js"></script> 
 </body>
