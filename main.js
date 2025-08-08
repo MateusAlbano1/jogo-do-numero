@@ -17,5 +17,8 @@ palpites.textContent += palpiteUsuario + " ";
 
 if (palpiteUsuario === numeroAleatorio) {
     ultimoResultado.textContent = "Parabéns! Você é Ninja!";
+    ultimoResultado.style.backgroundColor = "green";
+    baixoAouAlto.textContent = "";
+    finalizarJogo();
 }
 }
