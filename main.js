@@ -34,8 +34,28 @@ if (palpiteUsuario === numeroAleatorio) {
   }
 }
 
+contagemPalpites++;
+campoPalpite.value = "";
+campoPalpite.focus();
+}
 
+envioPalpite.addEventListener('click', verificarPalpite);
 
+function finalizarJogo () {
+    campoPalpite.disabled = true;
+    envioPalpite.disabled = true;
+    botaoReiniciar = document.createElement('button')
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.textContent = 'Reiniciar Jogo';
+    botaoReiniciar.classList.add('botaoReiniciar');
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
+}
 
-
-    
+function reiniciarJogo() {
+    contagemPalpites = 1;
+    const paragrafosReiniciar = document. querySelectorAll('.paragrafosResultado p');
+    for (const paragrafoReiniciar of paragrafosReiniciar) {
+        paragrafoReiniciar.textcontent = "";
+    }
+}
