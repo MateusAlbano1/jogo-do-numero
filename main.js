@@ -10,7 +10,7 @@ let botaoReiniciar;
 function verificarPalpite() {
     const palpiteUsuario = Number(campoPalpite.value);
     if (contagemPalpites === 1) {
-        palpites.textContent = "Palpites anteriores: "
+        palpites.textContent = "Palpites anteriores: ";
     }
 
 palpites.textContent += palpiteUsuario + " ";
@@ -21,7 +21,7 @@ if (palpiteUsuario === numeroAleatorio) {
   baixoAouAlto.textContent = "";
   finalizarJogo();
 } else if (contagemPalpites === 10) {
-  ultimoResultado.textcontent = "VOCÊ É BURRA!!";
+  ultimoResultado.textcontent = "VOCÊ É BURRO!!";
   baixoOuAlto.textcontent = "";
   finalizarJogo();
 } else {
@@ -44,7 +44,7 @@ envioPalpite.addEventListener('click', verificarPalpite);
 function finalizarJogo () {
     campoPalpite.disabled = true;
     envioPalpite.disabled = true;
-    botaoReiniciar = document.createElement('button')
+    botaoReiniciar = document.createElement('button');
     document.body.appendChild(botaoReiniciar);
     botaoReiniciar.textContent = 'Reiniciar Jogo';
     botaoReiniciar.classList.add('botaoReiniciar');
