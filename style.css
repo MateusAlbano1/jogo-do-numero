@@ -15,7 +15,7 @@ body {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4-x 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -40,7 +40,7 @@ h1 {
     font-size: 1.1em;
 }
 
-.formulario input[type="submit"]{
+.formulario input[type="submit"] {
     padding: 10px 20px;
     background-color: #28a745;
     color: #ffffff;
@@ -55,14 +55,14 @@ h1 {
     background-color: #218838;
 }
 
-paragrafosResultado p {
+.paragrafosResultado p {
     font-size: 1.2em;
     text-align: center;
     margin: 10px 0;
 }
 
 .ultimoResultado {
-    color: whiter;
+    color: white;
     padding: 3px;
     border-radius: 5px;
     font-size: 1.3em;
@@ -93,13 +93,3 @@ paragrafosResultado p {
 .botaoReiniciar:hover {
     background-color: #0056b3;
 }
-
-
-
-
-
-
-
-
-
-
