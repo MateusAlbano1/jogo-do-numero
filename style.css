@@ -34,7 +34,7 @@ h1 {
 .formulario input[type="number"] {
     width: 200px;
     padding: 10px;
-    margin-botton: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #cccccc;
     font-size: 1.1em;
@@ -57,7 +57,7 @@ h1 {
 
 paragrafosResultado p {
     font-size: 1.2em;
-    text-aling: center;
+    text-align: center;
     margin: 10px 0;
 }
 
